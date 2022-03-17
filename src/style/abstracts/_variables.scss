@@ -2,50 +2,17 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
+$yellow: rgb(251, 215, 132);
+$white: rgb(255, 255, 255);
+$grey: rgb(133, 142, 146);
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
-
-
-
-/// Container's maximum width
-/// @type Length
-$max-width: 1180px !default;
-
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
 
 
 
@@ -57,7 +24,7 @@ $breakpoints: (
   'small': 320px,
   'medium': 768px,
   'large': 1024px,
-) !default;
+);
 
 
 
@@ -68,4 +35,4 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'https://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: '/assets/';

@@ -1,10 +1,31 @@
+@use 'pages/home';
+@use 'base/typography';
+@use 'abstracts/variables' as v;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: 400;
+  color: v.$yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-image: url("../../assets/HG.png");
+  width: 100vw;
+  height: 100vh;
+}
 // @charset "UTF-8";
 
 // // 1. Configuration and helpers 
 // // ZAMIENIC IMPORT NA USE
 // @use 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
 
-@use 'pages/home';
 // // 2. Vendors
 // @use
 //   'vendors/normalize';
