@@ -12,23 +12,67 @@ body {
   font-family: "DM Serif Display", serif;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  font-size: 75px;
-  font-weight: 400;
-  color: #fbd784;
-  margin: 0;
-  padding: 0;
+body {
+  height: 1000vh;
+  font-size: 16px;
 }
 
 .wrapper {
   background-image: url("../../assets/HG.png");
-  width: 100vw;
+  background-size: cover;
   height: 100vh;
+}
+.nav {
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.nav__list {
+  list-style-type: none;
+  display: flex;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0 20px;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.nav__link:hover {
+  color: #fbd784;
+  transform: translateY(-3px);
+}
+.nav__logo {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.nav__logoLink {
+  color: white;
+  text-decoration: none;
+}
+.nav__button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+.nav__buttonText {
+  padding: 0 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.nav__button:hover {
+  color: #fbd784;
 }
 
 /*# sourceMappingURL=style.css.map */
