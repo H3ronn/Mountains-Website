@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as v;
+
 html {
   box-sizing: border-box;
 }
@@ -11,8 +13,10 @@ html {
 }
 
 body {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Sans Serif', Arial, sans-serif;
+  // font-family: 'DM Serif Display', serif;
   height: 200vh;
   font-size: 16px;
   color: white;
+  background-color: v.$bgDark;
 }

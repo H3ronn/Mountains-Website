@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+
+.subtitle {
+  color: v.$yellow;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 70px;
+    background-color: v.$yellow;
+    height: 2px;
+    margin-right: 25px;
+  }
+  
+}

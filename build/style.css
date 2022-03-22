@@ -11,10 +11,11 @@ html {
 }
 
 body {
-  font-family: "DM Serif Display", serif;
+  font-family: "Sans Serif", Arial, sans-serif;
   height: 200vh;
   font-size: 16px;
   color: white;
+  background-color: #0b1e26;
 }
 
 .nav {
@@ -36,6 +37,7 @@ body {
   display: block;
   padding: 0 20px;
   transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  font-weight: bold;
 }
 .nav__link:hover {
   color: #fbd784;
@@ -44,6 +46,7 @@ body {
 .nav__logo {
   font-size: 2rem;
   font-weight: lighter;
+  font-family: "DM Serif Display", serif;
 }
 .nav__logoLink {
   color: white;
@@ -69,7 +72,7 @@ body {
 
 .header {
   z-index: 20;
-  width: 750px;
+  width: 790px;
   position: fixed;
   top: 25%;
   left: 50%;
@@ -80,30 +83,16 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-.header__span {
-  color: #fbd784;
-  text-transform: uppercase;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 5px;
-}
-.header__span .goldLine {
-  display: inline-block;
-  width: 60px;
-  background-color: #fbd784;
-  height: 2px;
-  margin-right: 25px;
-}
 .header__heading {
-  font-size: 70px;
+  font-family: "DM Serif Display", serif;
+  font-size: 75px;
   font-weight: 500;
-  max-width: 800px;
   margin: 30px 0;
   line-height: 1.3;
 }
 .header__scroll {
   display: flex;
+  font-weight: bold;
 }
 .header__scroll svg {
   margin-left: 10px;
@@ -147,6 +136,78 @@ body {
   position: absolute;
   width: 100%;
   top: 0;
+}
+
+.main {
+  position: relative;
+  z-index: 100;
+  margin: 200px 80px 0;
+}
+.main .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .section__bgNumber {
+  color: #22333c;
+  font-weight: bold;
+  font-size: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 5%;
+  left: -80px;
+}
+.main .section__text {
+  margin-right: 80px;
+}
+.main .section__subtitle {
+  font-weight: 600;
+}
+.main .section__heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 64px;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 110%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.main .section__paragraph {
+  line-height: 32px;
+  font-weight: 500;
+}
+.main .section__readMore {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fbd784;
+  margin-top: 32px;
+  transition: transform 0.2s ease;
+}
+.main .section__readMore .rightArrow {
+  margin-left: 20px;
+  transform: rotate(-90deg);
+}
+.main .section__readMore:hover {
+  transform: translateX(3px);
+}
+
+.subtitle {
+  color: #fbd784;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  background-color: #fbd784;
+  height: 2px;
+  margin-right: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

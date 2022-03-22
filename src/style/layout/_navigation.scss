@@ -20,6 +20,7 @@
     display: block;
     padding: 0 20px;
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-weight: bold;
 
     &:hover {
       color: v.$yellow;
@@ -30,6 +31,7 @@
   &__logo {
     font-size: 2rem;
     font-weight: lighter;
+    font-family: 'DM Serif Display', serif;
 
     &Link {
       color: white;
