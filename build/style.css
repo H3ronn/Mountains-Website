@@ -18,15 +18,14 @@ body {
 }
 
 body {
-  height: 1000vh;
+  height: 200vh;
   font-size: 16px;
   color: white;
 }
 
 .hero {
-  background-image: url("../../assets/HG.png");
-  background-size: cover;
   height: 100vh;
+  position: relative;
 }
 .hero__blur {
   position: absolute;
@@ -39,9 +38,29 @@ body {
   height: 100vh;
   background-image: linear-gradient(135deg, #0b1d26, transparent 87%);
   opacity: 0.6;
+  z-index: 10;
+}
+.hero__top {
+  display: block;
+  width: 100%;
+}
+.hero__middle {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+.hero__bottom {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  z-index: 30;
 }
 .hero__content {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 .nav {
@@ -50,6 +69,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
+  position: relative;
+  z-index: 40;
 }
 .nav__list {
   list-style-type: none;
@@ -93,9 +114,12 @@ body {
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  z-index: 20;
+  width: 750px;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .title__container {
   display: flex;
@@ -123,6 +147,12 @@ body {
   max-width: 800px;
   margin: 30px 0;
   line-height: 1.3;
+}
+.title__scroll {
+  display: flex;
+}
+.title__scroll svg {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
