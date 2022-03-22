@@ -1,66 +1,20 @@
-.home-paragraph {
-  color: orange;
-}
-.home-paragraph span {
-  color: red;
+html {
+  box-sizing: border-box;
 }
 
-/**
- * Basic typography style for copy text
- */
-body {
-  font-family: "DM Serif Display", serif;
-}
-
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
+  font-family: "DM Serif Display", serif;
   height: 200vh;
   font-size: 16px;
   color: white;
-}
-
-.hero {
-  height: 100vh;
-  position: relative;
-}
-.hero__blur {
-  position: absolute;
-  content: "";
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(135deg, #0b1d26, transparent 87%);
-  opacity: 0.6;
-  z-index: 10;
-}
-.hero__top {
-  display: block;
-  width: 100%;
-}
-.hero__middle {
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 40%;
-}
-.hero__bottom {
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 60%;
-  z-index: 30;
-}
-.hero__content {
-  position: absolute;
-  width: 100%;
-  top: 0;
 }
 
 .nav {
@@ -113,7 +67,7 @@ body {
   color: #fbd784;
 }
 
-.title {
+.header {
   z-index: 20;
   width: 750px;
   position: fixed;
@@ -121,12 +75,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.title__container {
+.header__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.title__span {
+.header__span {
   color: #fbd784;
   text-transform: uppercase;
   font-size: 14px;
@@ -134,25 +88,65 @@ body {
   align-items: center;
   letter-spacing: 5px;
 }
-.title__span .goldLine {
+.header__span .goldLine {
   display: inline-block;
   width: 60px;
   background-color: #fbd784;
   height: 2px;
   margin-right: 25px;
 }
-.title__heading {
+.header__heading {
   font-size: 70px;
   font-weight: 500;
   max-width: 800px;
   margin: 30px 0;
   line-height: 1.3;
 }
-.title__scroll {
+.header__scroll {
   display: flex;
 }
-.title__scroll svg {
+.header__scroll svg {
   margin-left: 10px;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+}
+.hero__blur {
+  position: absolute;
+  content: "";
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #0b1d26, transparent 87%);
+  opacity: 0.6;
+  z-index: 10;
+}
+.hero__top {
+  display: block;
+  width: 100%;
+}
+.hero__middle {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+.hero__bottom {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  z-index: 30;
+}
+.hero__content {
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

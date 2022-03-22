@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as v;
+
+.nav {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 40;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 20px;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      color: v.$yellow;
+      transform: translateY(-3px);
+    }
+  }
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: lighter;
+
+    &Link {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+
+    &Text {
+     padding: 0 10px; 
+     font-size: 1rem;
+     font-weight: bold;
+    }
+
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: v.$yellow;
+    }
+  }
+}
