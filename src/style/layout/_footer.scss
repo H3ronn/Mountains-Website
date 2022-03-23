@@ -1,7 +1,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
-
 .footer {
   @media (max-width: 750px) {
     flex-direction: column;
@@ -14,9 +13,6 @@
   padding: 300px 80px 200px;
   display: flex;
   justify-content: space-between;
-
-  &__left {
-  }
 
   &__logo {
     font-size: 2rem;

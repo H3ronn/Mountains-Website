@@ -1,5 +1,4 @@
 .hero {
-  overflow: hidden;
   height: 100vh;
   position: relative;
     
@@ -23,8 +22,11 @@
       width: fit-content;
     }
     display: block;
+    max-width: 100vw;
     width: 100%;
+    object-fit: cover;
   }
+  
   &__middle {
     @media (max-width: 780px) {
       height: 600px;
@@ -34,10 +36,13 @@
       top: 30%;
     }
     display: block;
+    max-width: 100vw;
     width: 100%;
+    object-fit: cover;
     position: absolute;
     top: 40%;
   }
+
   &__bottom {
     @media (max-width: 950px) {
       top: 55%;
