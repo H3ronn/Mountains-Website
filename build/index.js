@@ -13,7 +13,9 @@ const handleScroll = () => {
 }
 
 const translateBackgroundImages = (value) => {
-  if(value < -30) return
+  if(value < -30) {
+    return 
+  }
   backgroundImages[0].style.transform = `translate3d(0px, ${value*2}%, 0px)`;
   backgroundImages[1].style.transform = `translate3d(0px, ${value}%, 0px)`;
   backgroundImages[2].style.transform = `translate3d(0px, ${value/3}%, 0px)`;

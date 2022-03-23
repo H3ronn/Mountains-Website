@@ -1,3 +1,72 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  padding: 300px 80px 200px;
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+  }
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 4px;
+  }
+
+  &__paragraph {
+    line-height: 1.5;
+    width: 250px;
+
+    
+    
+  }
+
+  &__copyright {
+    margin-top: 80px;
+    width: 320px;
+    opacity: 0.5;
+    line-height: 2;
+  }
+
+  &__artist {
+    @include m.yellow-on-hover;
+
+    color: white;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.3);
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0 40px;
+  }
+
+  &__listItem:first-of-type {
+    color: v.$yellow;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__listLink {
+    @include m.yellow-on-hover;
+    
+    display: block;
+    color:white;
+    text-decoration: none;
+    margin-bottom: 16px;
+  }
+}

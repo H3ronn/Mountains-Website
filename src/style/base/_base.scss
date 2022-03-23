@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
+  
+}
+*::selection {
+  color: v.$yellow;
 }
 
 body {
@@ -19,4 +24,5 @@ body {
   font-size: 16px;
   color: white;
   background-color: v.$bgDark;
+  
 }

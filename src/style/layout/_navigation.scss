@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .nav {
   padding: 40px 80px;
@@ -40,6 +41,7 @@
   }
 
   &__button {
+    @include m.yellow-on-hover;
     color: white;
     background-color: transparent;
     border: none;
@@ -54,10 +56,6 @@
      font-weight: bold;
     }
 
-    transition: color 0.2s ease-in-out;
-
-    &:hover {
-      color: v.$yellow;
-    }
+    
   }
 }
