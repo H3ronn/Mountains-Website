@@ -1,10 +1,13 @@
 const header = document.querySelector('#header');
 const backgroundImages = [...document.querySelectorAll('.backgroundImage')];
-
 const handleScroll = () => {
-  const opacity = (1 - (window.scrollY / 800 )).toFixed(2);
+const headerOffsetBottom = header.offsetTop + header.offsetHeight;
+const imageOffsetBottom = backgroundImages[2].offsetTop + backgroundImages[2].offsetHeight;
+const opacityChange = imageOffsetBottom-headerOffsetBottom;
+
+  const opacity = (1 - (window.scrollY /  opacityChange*2)).toFixed(2);
   header.style.opacity = opacity;
-  if (opacity < 0){
+  if (opacity < 0.1){
     header.style.opacity = 0;
   }
 
