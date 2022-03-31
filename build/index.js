@@ -27,3 +27,20 @@ const translateBackgroundImages = (value) => {
 
 window.addEventListener('scroll', handleScroll);
 
+
+let stateCheck = setInterval(() => {
+  if (document.readyState === 'complete') {
+    clearInterval(stateCheck);
+
+    setTimeout(() => {
+      
+      document.querySelector('.loading').style.opacity = 0;
+      setTimeout(() => {
+        document.querySelector('.loading').style.display = 'none';
+      }, 300)
+
+    }, 500)
+
+  }
+}, 100);
+

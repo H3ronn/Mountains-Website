@@ -1,0 +1,19 @@
+@use '../abstracts/variables'as v;
+
+.loading {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: v.$bgDark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+
+  &__logo {
+    font-size: 4rem;
+    font-weight: lighter;
+    font-family: 'DM Serif Display', serif;
+  }
+}

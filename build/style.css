@@ -423,4 +423,21 @@ body {
   margin-right: 25px;
 }
 
+.loading {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0b1e26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+}
+.loading__logo {
+  font-size: 4rem;
+  font-weight: lighter;
+  font-family: "DM Serif Display", serif;
+}
+
 /*# sourceMappingURL=style.css.map */
